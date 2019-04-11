@@ -29,11 +29,11 @@ You can then instantiate this controller, with or without use cases.
 
   s.ios.deployment_target = '8.0'
 
-  s.swift_version = '4.1'
+  s.swift_version = '5.0'
 
   s.source_files = 'ControllerFactory/**/*.{h,swift}'
   
-  s.resources = ['ControllerFactory/**/*.{storyboard,plist}']
+  s.resources = ['ControllerFactory/**/*.storyboard']
 
   s.frameworks = 'UIKit'
 

@@ -424,7 +424,7 @@
 				PROVISIONING_PROFILE = "12f7fa78-2412-404d-bad9-1b66c5ea2603";
 				PROVISIONING_PROFILE_SPECIFIER = "Worldline Development Wildcard";
 				SWIFT_OBJC_BRIDGING_HEADER = "ControllerFactoryDemo/ControllerFactoryDemo-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,7 +446,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ControllerFactoryDemo/ControllerFactoryDemo-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

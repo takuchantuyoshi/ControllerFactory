@@ -62,8 +62,8 @@ class ControllerListTableViewController: UITableViewController {
         viewControllers.forEach { dataSource[$0.displayValue[0]]?.append($0) }
         
         if let savedController = savedController,
-            let section = dataSourceSectionTitles.index(of: savedController.displayValue[0]),
-            let index = dataSource[savedController.displayValue[0]]?.index(of: savedController) {
+            let section = dataSourceSectionTitles.firstIndex(of: savedController.displayValue[0]),
+            let index = dataSource[savedController.displayValue[0]]?.firstIndex(of: savedController) {
             let indexPath = IndexPath(row: index, section: section)
             tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         }
@@ -166,7 +166,7 @@ extension ControllerListTableViewController {
         
         return indexTitles[0...index]
             .reversed()
-            .compactMap { currentDataSourceSectionTitles.index(of: $0) }
+            .compactMap { currentDataSourceSectionTitles.firstIndex(of: $0) }
             .first ?? 0
     }
 }
